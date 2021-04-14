@@ -1,0 +1,10 @@
+name: "yep"
+output_dir: "docs"
+navbar:
+  title: "Yep"
+  left:
+  - text: "Home"
+    href: index.html
+  - text: "YEP"
+    href: YEP.html
+output: html_document
