@@ -5,4 +5,64 @@ navbar:
   left:
   - text: "Home"
     href: index.html
-output: html_document
+output: 
+  html_document:
+    htmlwidgets: TRUE
+    plotly: TRUE
+theme: hugo-assembly
+baseURL: https://example.co
+languageCode: en-US
+title: ''
+params:
+  actions:
+    enable: yes
+    register: CTA Now!
+  author: A Human Name
+  banner:
+    byline: v0.3.1 online since April 20, 2021
+    title: Welcome to the Trading Floor
+  contact:
+    enable: yes
+  description: The description
+  footer:
+    copy: > 
+      Site template designed by TEMPLATED http://templated.co | 
+      2018 &copy; Assembly Inc. | All rights reserved | 
+      Background obtained via Fotogrph http://fotogrph.com
+    enable: yes
+    facebook: ''
+    instagram: ''
+    twitter: ''
+  nav:
+    contact: Contact
+    home: Home
+    services: Features
+    welcome: Performance
+  services:
+    enable: yes
+    item:
+      - button_item_info: Data-Driven
+        description: Decision making based on sophisticated machine-learning
+          models trained to make sense of and discover insights hidden within
+          the chaotic movements of cryptocurrency prices.
+        weight: A
+      - button_item_info: Safe
+        description: Carefully manages trades with intelligent risk management
+          practices designed to maximize growth while protecting investments by
+          minimizing exposure to downside volatility.
+        weight: B
+      - button_item_info: 24/7
+        description: Crypto markets never sleep, and neither does the algorithm.
+          Always vigilant, always calculating, always ready to seize the perfect
+          opportunity, no matter what time it may arise.
+        weight: C
+    subtitle: > 
+      Designed to generate premium returns without compromising peace of mind.
+    title: Features
+  welcome:
+    button_text: Call Now
+    description: Sample text
+    enable: yes
+    subtitle: Verify past performance at a glance with industry-standard metrics,
+      user-friendly graphics, and continually-reported returns.
+    title: Experience the Journey
