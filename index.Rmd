@@ -1,3 +1,14 @@
 ---
 output: html_document
 ---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(dplyr)
+library(plotly)
+graphDF <- read.csv("~/Kraken Trading/graphDF.csv")
+```
+
+```{r plotly, fig.width=12, echo=FALSE}
+graphDF %>% plot_ly(x = ~anytime::anytime(unix), type = "candlestick",
+                               open = ~open, close = ~close,
+                               high = ~high, low = ~low) %>% layout(title="Candles")
